@@ -1,0 +1,50 @@
+
+.cv-format {
+  /* padding-top: 90px; */
+  display: grid;
+  grid-template-columns: 150px  1fr ;
+  row-gap: 40px;
+  column-gap: 10px;
+  padding-left: 30px;
+}
+.icon-size {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 5px;
+  padding-right: 5px;
+  row-gap: 10px;
+}
+.skill-icon {
+  cursor: pointer;
+  border-radius: 100px;
+  border-width: 5px;
+  width: 100%;
+  border-color: aquamarine;
+  border-style:solid;
+  transition: 0.15s;
+}
+.skill-icon:active {
+  border-style: ridge;
+  opacity: 0.6;
+}
+
+.button-skills {
+  border-style: solid;
+  height: 120px;
+  width:120px;
+  border-radius: 70%;
+  font-size: 60px;
+  background-color: aquamarine; 
+  border-color:brown;
+  border-width: 5px;
+  font-weight:bold;
+  text-align: center;
+  transition: 0.2s;
+  margin: 0px;
+  padding: 0px;
+}
+.button-skills:active {
+  opacity: 0.75;
+  background-color: brown;
+  border-color: aquamarine;
+}
