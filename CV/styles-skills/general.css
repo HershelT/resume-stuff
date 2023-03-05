@@ -1,19 +1,57 @@
 .multiline{
   white-space: pre-wrap;
 }
-.text {
-  margin-top: 10px;
-  margin-bottom: 0px;
-  font-weight: 500;
-  font-size: 38px;
-  line-height: 40px;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
+
 
 .icon-description {
-  font-size: 13px;
+  font-size: 19%;
   text-align: center;
   margin:0px; 
   padding: 0px;
+}
+body {
+  margin: 0px;
+}
+
+
+.text {
+  margin-right: 20px;
+  margin-left: 20px;
+  white-space: pre-wrap;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+.cv-info-text {
+  height: 590px;
+  overflow: auto;
+  overflow-x: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: bisque;
+  margin-left: 5px;
+  margin-right: 50px;
+  border-radius: 50px;
+}
+
+.cv-info-text::-webkit-scrollbar {
+  width: 10px;
+  
+}
+
+.cv-info-text::-webkit-scrollbar-track {
+  background: rgb(165, 182, 166);
+  border-radius: 20px;
+}
+
+.cv-info-text::-webkit-scrollbar-thumb {
+  background:rgb(216, 180, 21);
+  border-radius: 20px;
+}
+
+.cv-info-text::-webkit-scrollbar-thumb:hover {
+  background:rgb(179, 153, 40);
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles-skills/cv-grid.css">
     <link rel="stylesheet" href="styles-skills/cv-flexbox.css">
   </head>
-  <body style="background-color: antiquewhite;">
+  <body style="background-color: antiquewhite;" onload="changeText(0)">
     <div class="header">
       <div class="flex-left">
         CV Points
@@ -36,19 +36,19 @@
         
       </div>
     </div>
-
+    
     <div class="cv-format">
       <div class="icon-size">
         <div>
-          <button class="button-skills">
+          <button class="button-skills" onclick="changeText(0)">
             &#127968
-            <p class="icon-description">HOME</p>
+            <p class="icon-description">OBJECTIVE</p>
           </button>
             <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
         </div>
           
         <div>
-          <button class="button-skills">
+          <button class="button-skills" onclick="changeText(1)">
             &#9975
             <p class="icon-description">SKILLS</p>
           </button>
@@ -56,7 +56,7 @@
         </div>
 
         <div>
-          <button class="button-skills">
+          <button class="button-skills" >
             &#9978
             <p class="icon-description">HOBBIES</p>
           </button>
@@ -64,29 +64,73 @@
         </div>
 
         <div>
-          <button class="button-skills">
+          <button class="button-skills"onclick="changeText(2)">
             &#127942
             <p class="icon-description">AWARDS</p>
           </button>
           <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
         </div>
 
+        <div>
+          <button class="button-skills" onclick="addLink()">
+            &#128206
+            <p class="icon-description" >LINKS</p>
+          </button>
+          <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+
       </div>
-      
-      <div>
-        <p class="text" style="text-indent: 30px;">
+      <script>
+        
+        let text = [
+          "\tCompetitive Rubik’s Cube Speed Solver brings an algorithmic, yet colorful, approach to Programming and Logic Solving",
+          '● 3 years of strong Java Programing and Core-Knowledge building' +
+          ' \n● Entry Level Python Programmer (Java Skills easily translate over)' +
+          ' \n● Basic servo, motor, gear, and camera programming in C++ for robotics' +
+          ' \n● Beta-Tester for GitHub Copilot, an AI Programming Assist' +
+          ' \n● GitHub repository building' +
+          ' \n● Captain of a Robotics Team.' +
+          '   \n\t○ Central focus on the programming and application of the autonomous robot' +
+          ' \n● Captain of the Math Team' +
+          '   \n\t○ Coordinator of Math Growth. Led Practices and inspired teammates to delve deeper into math.',
+          '● National Honor Society' +
+          '\n● Illinois State Scholar' +
+          '\n● Mathletes Team Competition First Place' +
+          '\n● Mathletes Individual Competition Finalist (3rd Place)' +
+          '\n● AP Scholar with Distinction (Score of 3.5 or more on all AP Exams: Exams out of 5)' +
+          '\n● Chesed Society Award (Students at ICJA with 250+ Chesed Hours)',
+          'https://github.com/HershelT',
+        ];
+        
+        
+        function changeText(num) {
+          document.getElementById("myText").innerHTML = text[num];
+          
+        }
+        function addLink(){
+          let myParagraph = document.getElementById("myText")
+          let anchor= document.createElement("a");
+          anchor.appendChild(link);
+          anchor.href="https://github.com/HershelT";
+          anchor.textContent= "Hershel stuff";
+          myParagraph.appendChild(anchor);
+        }
+      </script>
+      <div class="cv-info-text">
+        <p class="text" id="myText"></p>
+        <!-- <p class="text">
           Hershels Thomas:
           A Genius Among Men. 
           A Wholesome Dude.  
           He always wears a clown costume to work.
           Hershels has a unique skillset he brings to the team.
-          He always wears a clown costume to work.
+          He always wears a clown costume to work
           
-        </p>
-        <p class="text">
-          how is it going
-          dadsfdsaf
-        </p>
+         
+         
+         
+          
+        </p> -->
         
       </div>
       

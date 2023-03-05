@@ -5,7 +5,8 @@
   grid-template-columns: 150px  1fr ;
   row-gap: 40px;
   column-gap: 10px;
-  padding-left: 30px;
+  margin-left: 30px;
+  margin-top: 90px;
 }
 .icon-size {
   display: grid;
@@ -14,26 +15,14 @@
   padding-right: 5px;
   row-gap: 10px;
 }
-.skill-icon {
-  cursor: pointer;
-  border-radius: 100px;
-  border-width: 5px;
-  width: 100%;
-  border-color: aquamarine;
-  border-style:solid;
-  transition: 0.15s;
-}
-.skill-icon:active {
-  border-style: ridge;
-  opacity: 0.6;
-}
+
 
 .button-skills {
   border-style: solid;
-  height: 120px;
-  width:120px;
+  height: 110px;
+  width:110px;
   border-radius: 70%;
-  font-size: 60px;
+  font-size: 55px;
   background-color: aquamarine; 
   border-color:brown;
   border-width: 5px;

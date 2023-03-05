@@ -6,6 +6,7 @@
   column-gap: 40px;
   row-gap: 40px;
   margin: 0px;
+  margin-top: 90px;
   /* margin-right: 20px; */
 }
 .cv-display {
@@ -61,10 +62,10 @@
 }
 
 .add-button{
-  background-color: blue;
+  background-color: rgb(151, 203, 55);
   border-style: solid;
   border-radius: 10px;
-  border-color: grey;
+  border-color: rgb(227, 162, 72);
   border-width: 3px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
   font-size: 30px;
