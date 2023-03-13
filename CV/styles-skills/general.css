@@ -1,3 +1,5 @@
+
+
 .multiline{
   white-space: pre-wrap;
 }
@@ -10,7 +12,9 @@
   padding: 0px;
 }
 body {
+  background-color: antiquewhite;
   margin: 0px;
+  padding-top: 100px;
 }
 
 
@@ -24,34 +28,4 @@ body {
   font-size: 30px;
   line-height: 40px;
   margin-bottom: 30px;
-}
-.cv-info-text {
-  height: 590px;
-  overflow: auto;
-  overflow-x: hidden;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: bisque;
-  margin-left: 5px;
-  margin-right: 50px;
-  border-radius: 50px;
-}
-
-.cv-info-text::-webkit-scrollbar {
-  width: 10px;
-  
-}
-
-.cv-info-text::-webkit-scrollbar-track {
-  background: rgb(165, 182, 166);
-  border-radius: 20px;
-}
-
-.cv-info-text::-webkit-scrollbar-thumb {
-  background:rgb(216, 180, 21);
-  border-radius: 20px;
-}
-
-.cv-info-text::-webkit-scrollbar-thumb:hover {
-  background:rgb(179, 153, 40);
 }
