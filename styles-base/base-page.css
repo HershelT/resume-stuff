@@ -20,10 +20,9 @@
       grid-template-columns: 1fr 1fr 1fr ;
     }
 }
-@media (min-width: 0px) 
-  and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
   .cv-grid {
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -36,7 +35,7 @@
 
 
 .cv-display {
-  width: 350px;
+  width: 300px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
   border-color: black;
