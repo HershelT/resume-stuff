@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hershel's CV</title>
+    <link rel="stylesheet" href="styles-skills/general.css">
+    <link rel="stylesheet" href="styles-skills/resume-grid.css">
+    <link rel="stylesheet" href="styles-skills/header.css">
+  </head>
+  <body style="padding-bottom: 1000px;"onload="changeText(0)">
+    <div class="header">
+      <div class="flex-left">
+        CV Points
+      </div>
+      <div class="flex-middle" >
+        <input class="search-bar" type="textbox" placeholder="Find User Skill">
+      </div>
+      <div class="flex-right">
+        <div class="skill-icon-container">
+          <button class="skill-icon">
+            &#127955
+          </button>
+          <div class="tooltip">Attributes</div>
+          \
+        </div>
+
+        <div class="skill-icon-container">
+          <button class="skill-icon">
+            &#127760
+          </button>
+          <div class="tooltip">Global</div>
+        </div>
+
+        <div class="skill-icon-container">
+          <button class="skill-icon" onclick="location.href ='home.html';">
+            &#128193
+          </button>
+          <div class="tooltip">Home</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cv-format">
+      <div class="icon-size">
+        <div>
+          <button class="button-skills" onclick="changeText(0)">
+            &#127968
+            <p class="icon-description">OBJECTIVE</p>
+          </button>
+            <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+          
+        <div>
+          <button class="button-skills" onclick="changeText(1)">
+            &#9975
+            <p class="icon-description">SKILLS</p>
+          </button>
+          <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+
+        <div>
+          <button class="button-skills" >
+            &#9978
+            <p class="icon-description">HOBBIES</p>
+          </button>
+          <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+
+        <div>
+          <button class="button-skills"onclick="changeText(2)">
+            &#127942
+            <p class="icon-description">AWARDS</p>
+          </button>
+          <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+
+        <div>
+          <button class="button-skills" onclick="addLink()">
+            &#128206
+            <p class="icon-description" >LINKS</p>
+          </button>
+          <!-- <img class="skill-icon" src="skills/hershelpic.jpeg"> -->
+        </div>
+
+      </div>
+      <script>
+        
+        let text = [
+          "   Competitive Rubik’s Cube Speed Solver brings an algorithmic, yet colorful, approach to Programming and Logic Solving",
+          '● 3 years of strong Java Programing and Core-Knowledge building' +
+          ' \n● Entry Level Python Programmer (Java Skills easily translate over)' +
+          ' \n● Basic servo, motor, gear, and camera programming in C++ for robotics' +
+          ' \n● Beta-Tester for GitHub Copilot, an AI Programming Assist' +
+          ' \n● GitHub repository building' +
+          ' \n● Captain of a Robotics Team.' +
+          '   \n\t○ Central focus on the programming and application of the autonomous robot' +
+          ' \n● Captain of the Math Team' +
+          '   \n\t○ Coordinator of Math Growth. Led Practices and inspired teammates to delve deeper into math.',
+          '● National Honor Society' +
+          '\n● Illinois State Scholar' +
+          '\n● Mathletes Team Competition First Place' +
+          '\n● Mathletes Individual Competition Finalist (3rd Place)' +
+          '\n● AP Scholar with Distinction (Score of 3.5 or more on all AP Exams: Exams out of 5)' +
+          '\n● Chesed Society Award (Students at ICJA with 250+ Chesed Hours)' +
+          '\n● Illinois State Scholar' +
+          '\n● Mathletes Team Competition First Place' +
+          '\n● Mathletes Individual Competition Finalist (3rd Place)' +
+          '\n● AP Scholar with Distinction (Score of 3.5 or more on all AP Exams: Exams out of 5)' +
+          '\n● Chesed Society Award (Students at ICJA with 250+ Chesed Hours)'  +
+          '\n● Illinois State Scholar' +
+          '\n● Mathletes Team Competition First Place' +
+          '\n● Mathletes Individual Competition Finalist (3rd Place)' +
+          '\n● AP Scholar with Distinction (Score of 3.5 or more on all AP Exams: Exams out of 5)' +
+          '\n● Chesed Society Award (Students at ICJA with 250+ Chesed Hours)'
+        ]
+        
+        
+        function changeText(num) {
+          document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()
+          document.getElementById("myText").innerHTML = text[num];
+        }
+        const links = [
+          { text: "Hershel's github", href: "https://github.com/HershelT", target: "_blank", marginTop: "20px" },
+          { text: "Hershel's Docker", href: "https://hub.docker.com/u/hershelt", target: "_self", marginTop: "20px" },
+          // { text: "Link 3", href: "#", target: "_self", marginTop: "30px" }
+        ];
+        function addLink(){
+          document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()
+          const linksContainer = document.getElementById("myText");
+          document.getElementById("myText").innerHTML = "";
+          links.forEach((link) => { 
+            const linkElement = document.createElement("a");
+            linkElement.innerText = link.text + "\n";
+            linkElement.href = link.href;
+            linkElement.target = link.target;
+            linkElement.style.marginTop = link.marginTop;
+            linksContainer.appendChild(linkElement);
+          });
+          const paragraph = document.getElementById("myText");
+          paragraph.replaceWith(linksContainer);
+        }
+      </script>
+      <div class="cv-info-text">
+        <p class="text" id="myText"></p>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>

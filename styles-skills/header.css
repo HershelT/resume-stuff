@@ -1,0 +1,119 @@
+.header {
+  vertical-align: middle;
+  /* margin:0px; */
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: chocolate;
+  align-items: center;
+  position:fixed;
+  border-radius: 20px; 
+  top:0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
+
+
+
+.flex-left{
+  margin-left:45px;
+  margin-right: 10px;
+  width: 150px;
+  font-size: 26px;
+  color: rgb(65, 235, 195);
+  font-weight: 700;
+  font-style: italic; 
+}
+
+.flex-middle {
+  flex:1;
+  display: flex;
+  align-items: center;
+}
+.search-bar {
+  max-width: 75%;
+  font-size: 18px;
+  flex: 1;
+  width: 0px;
+  height: 35px;
+  border-width: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: darksalmon;
+  background-color: rgb(124, 195, 214);
+  text-align: center;
+  min-width: 150px;
+}
+.search-bar:focus{
+  border-color: yellow;
+}
+
+
+.flex-right {
+  margin-right: 20px;
+  margin-left: 30px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+
+.skill-icon {
+  cursor: pointer;
+  font-size: 20px;
+  height:45px;
+  width: 85px;
+  border-radius: 100px;
+  border-width: 5px;
+  /* width: 100%; */
+  border-color: aquamarine;
+  border-style:solid;
+  transition: 0.15s;
+}
+.skill-icon:active {
+  border-style: ridge;
+  opacity: 0.6;
+}
+
+.skill-icon-container {
+  position: relative;
+}
+
+.skill-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.skill-icon-container .tooltip {
+  position: absolute;
+  bottom: -32px;
+  white-space: nowrap;
+
+  background-color: gray;
+  color: white;
+
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.15s;
+  pointer-events: none;
+
+
+
+}
+
+.skill-icon-container:hover .tooltip {
+  opacity: 1;
+  
+}
+

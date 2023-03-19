@@ -1,0 +1,125 @@
+.cv-grid {
+  
+  display: grid;
+  grid-template-columns: 350px 350px;
+  column-gap: 20px;
+  row-gap: 40px;
+  /* margin: 0px; */
+  margin-left: 65px; 
+  margin-right: 65px;
+  transition: 2s;
+  /* margin-top: 100px; */
+  /* margin-right: 20px; */
+}
+
+
+
+@media (min-width: 751px) 
+   and (max-width: 1599px){
+    .cv-grid{
+      grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (min-width: 0px) 
+  and (max-width: 750px) {
+  .cv-grid {
+    grid-template-columns: 350px 350px;
+  }
+}
+
+@media(min-width: 1600px) {
+  .cv-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
+.cv-display {
+  width: 350px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  border-color: black;
+  background-color: white;
+}
+.profile-row{
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.profile-offers {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background-color: rgba(120, 96, 85, 0.745);
+  color: rgb(116, 210, 121);
+  border-radius: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.profile-image {
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.profile-description {
+  line-height: 12px;
+  margin-left: 12px;
+  margin-bottom: 12px;   
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+.desc-grid {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  column-gap: 16px;
+  margin-bottom: 12px;
+}
+.profile-pic {
+  width: 120%;
+  border-radius: 100%;
+  border-color: antiquewhite;
+  border-style: solid;
+}
+.friends{
+  font-size: 20px;
+  color: grey;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding-right: 10px;
+  padding-left: 12px;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+} 
+
+.add-button{
+  background-color: rgb(151, 203, 55);
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(227, 162, 72);
+  border-width: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  font-size: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: 0.15s;
+}
+.add-button:hover{
+  cursor: pointer;
+}
+.add-button:active{
+  box-shadow: none;
+  transform: translate3d(5px, 5px, 0px)
+}

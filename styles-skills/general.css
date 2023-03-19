@@ -1,0 +1,31 @@
+
+
+.multiline{
+  white-space: pre-wrap;
+}
+
+
+.icon-description {
+  font-size: 19%;
+  text-align: center;
+  margin:0px; 
+  padding: 0px;
+}
+body {
+  background-color: antiquewhite;
+  margin: 0px;
+  padding-top: 100px;
+}
+
+
+.text {
+  margin-right: 20px;
+  margin-left: 20px;
+  white-space: pre-wrap;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
