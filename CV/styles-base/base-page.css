@@ -1,16 +1,42 @@
 .cv-grid {
-  padding-left: 65px;
-  padding-right: 65px;
+  
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  column-gap: 40px;
+  grid-template-columns: 350px 350px;
+  column-gap: 20px;
   row-gap: 40px;
-  margin: 0px;
+  /* margin: 0px; */
+  margin-left: 65px; 
+  margin-right: 65px;
+  transition: 2s;
   /* margin-top: 100px; */
   /* margin-right: 20px; */
 }
+
+
+
+@media (min-width: 751px) 
+   and (max-width: 1599px){
+    .cv-grid{
+      grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (min-width: 0px) 
+  and (max-width: 750px) {
+  .cv-grid {
+    grid-template-columns: 350px 350px;
+  }
+}
+
+@media(min-width: 1600px) {
+  .cv-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+
 .cv-display {
-  width: 100%;
+  width: 350px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
   border-radius: 30px;
   border-color: black;
@@ -74,7 +100,7 @@
 .center-button {
   display: flex;
   justify-content: center;
-}
+} 
 
 .add-button{
   background-color: rgb(151, 203, 55);
