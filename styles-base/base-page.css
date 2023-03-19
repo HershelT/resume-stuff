@@ -1,7 +1,7 @@
 .cv-grid {
-  
+  width: 100%;
   display: grid;
-  grid-template-columns: 350px 350px;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 40px;
   /* margin: 0px; */
@@ -17,12 +17,15 @@
 @media (min-width: 751px) 
    and (max-width: 1599px){
     .cv-grid{
-      grid-template-columns: 1fr 1fr 1fr ;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 }
 @media only screen and (max-width: 750px) {
   .cv-grid {
     grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
