@@ -27,6 +27,7 @@
 }
 
 
+
 .button-skills {
   border-style: solid;
   height: 110px;
@@ -54,6 +55,9 @@
   border-color: aquamarine;
 }
 
+
+
+
 .cv-info-text {
   height: 590px;
   /* width: ; */
@@ -66,6 +70,11 @@
   margin-right: 50px;
   border-radius: 50px;
 }
+.cv-info-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+
 
 .cv-info-text::-webkit-scrollbar {
   width: 10px;
@@ -84,4 +93,37 @@
 
 .cv-info-text::-webkit-scrollbar-thumb:hover {
   background:rgb(179, 153, 40);
+}
+
+
+@media only screen and (max-width: 750px){
+  .icon-size{
+    row-gap: 6px;
+    top: 45px;
+    
+  }
+  .button-skills {
+    height: 80px;
+    width: 80px;
+    border-radius: 60%;
+    font-size: 35px;
+    border-width: 3px;
+  }
+  .cv-info-text {
+    position: relative;
+    top: -40px;
+    height: 500px;
+    margin-right: 10px;
+    margin-left: 70px;
+    margin-top: 0px;
+  }
+  .cv-info-text .text {
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-right: 14px;
+    margin-left: 14px;
+    margin-top: 14px;
+    margin-bottom: 22px;
+  }
 }
