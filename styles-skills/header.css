@@ -35,7 +35,6 @@
   border-color: darksalmon;
   background-color: rgb(124, 195, 214);
   text-align: center;
-  min-width: 150px;
 }
 .search-bar:focus{
   border-color: yellow;
@@ -123,6 +122,8 @@
     width: 100%;
     font-size: 18px;
     height: 35px;
+    min-width: 150px;
+
 
   }
   .flex-right {
@@ -134,18 +135,16 @@
 }
 
 @media only screen and (max-width: 750px) {
-  /* .base-page {
-    width: max-content;
-  } */
   .header {
     height: 50px;
   }
   .flex-left {
+    display: inline-block;
     margin-left: 15px;
     margin-right: 5px;
-    flex: 1;
+    flex: 0.5;
     font-size: 12px;
-    display: inline-block;
+    
   }
 
   
@@ -156,12 +155,13 @@
     font-size: 14px;
     height: 25px;
     margin-right: 0px;
+    width: 75px;
   }
 
   .flex-right {
     margin-right: 6px;
-    margin-left: 4px;
-    flex: 1;
+    margin-left: 24px;
+    flex: 2;
     
   }
 
