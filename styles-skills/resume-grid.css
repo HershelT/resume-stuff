@@ -95,7 +95,12 @@
   background:rgb(179, 153, 40);
 }
 
-
+.icon-description {
+  font-size: 19%;
+  text-align: center;
+  margin:0px; 
+  padding: 0px;
+}
 @media only screen and (max-width: 750px){
   .icon-size{
     row-gap: 6px;
@@ -111,7 +116,7 @@
   }
   .cv-info-text {
     position: relative;
-    top: -40px;
+    top: -50px;
     height: 500px;
     margin-right: 10px;
     margin-left: 70px;
