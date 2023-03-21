@@ -139,13 +139,13 @@
   } */
   .header {
     height: 50px;
-    width: max-content;
   }
   .flex-left {
     margin-left: 15px;
     margin-right: 5px;
     flex: 1;
     font-size: 12px;
+    display: inline-block;
   }
 
   
