@@ -161,7 +161,7 @@
   .flex-right {
     margin-right: 6px;
     margin-left: 4px;
-    flex: 0;
+    flex: 1;
     
   }
 
