@@ -150,7 +150,6 @@
 
   
   .flex-middle{
-    flex: 1;
     flex: 0.5;
   }
   .search-bar {
@@ -160,9 +159,9 @@
   }
 
   .flex-right {
-    margin-right: 10px;
-    margin-left: 15px;
-    flex: 3;
+    margin-right: 6px;
+    margin-left: 4px;
+    flex: 5;
     
   }
 
