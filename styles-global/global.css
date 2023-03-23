@@ -1,0 +1,85 @@
+.side-setting {
+  position: fixed;
+  background-color: rgb(149, 143, 138);
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 12px;
+  left: 0px;
+  top: 75px;
+  /* padding: 6px 6px 8px 8px; */
+  width: 200px;
+  height: 600px;
+  z-index: 1;
+}
+
+
+
+.setting {
+  position: relative;
+  font-size: 28px;
+  height: 35px;
+  border-bottom: 2px solid black;
+  padding-left: 8px;
+  padding-bottom: 4px;
+  transition: 0.15s;
+  padding-top: 4px;
+
+}
+.setting:hover {
+  /* opacity: 0.4; */
+}
+
+
+
+.expand {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 6px;
+  right: 15px;
+  font-size: 28px;
+  color: rgba(181, 13, 13, 0.666);
+  transition: 0.15s;
+}
+.expand:active{
+  opacity: 0.6;
+  color: black;
+}
+
+.info {
+  width: 600px;
+}
+.show-more {
+  position: absolute;
+  pointer-events: none;
+  font-size: 16px;
+  white-space: nowrap;
+  color: white;
+  background-color: darkgrey;
+
+  display: inline;
+  left: 0px;
+  /* left: 0px; */
+  top: 43px;
+  opacity: 0;
+  
+  border-style: solid;
+  /* transition: 0.15s; */
+}
+.show-more div {
+  border-width: 2px;
+  padding: 4px 4px 6px 6px;
+  border-style: solid;
+  border-color: white;
+}
+
+.setting:hover .show-more  {
+  opacity: 1;
+  z-index: 33;
+}
+.setting:active .show-more{
+  opacity: 0;
+}
