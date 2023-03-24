@@ -24,6 +24,7 @@
   padding-bottom: 4px;
   transition: 0.15s;
   padding-top: 4px;
+  /* pointer-events: none; */
 
 }
 .setting:hover {
@@ -59,8 +60,7 @@
   white-space: nowrap;
   color: white;
   background-color: darkgrey;
-
-  display: inline;
+  z-index:86;
   left: 0px;
   /* left: 0px; */
   top: 43px;
