@@ -57,73 +57,12 @@
         </div>
         
       </div>
-      <script>
-
-        // document.getElementById('setting').addEventListener('click', function(event) {
-        //   if (event.target && event.target.id === 'general') {
-        //     var elementToDisplay = document.getElementById('general');
-
-        //     if (elementToDisplay.style.display === 'none') {
-        //       elementToDisplay.style.display = 'block';
-        //     } else {
-        //       elementToDisplay.style.display = 'none';
-        //     }
-        //   }
-        // });
-
-        // function showElement(elementId) {
-        //   var element = document.getElementById(elementId);
-        //   if (element) {
-        //     element.style.display = "block";
-        //     var hideOnClick = function(event) {
-        //       if (event.target !== element) {
-        //         document.removeEventListener("click", hideOnClick);
-        //         hideElement(elementId);
-        //       }
-        //     };
-        //     document.addEventListener("click", hideOnClick);
-        //   }
-        // }
-
-        // function hideElement(elementId) {
-        //   var element = document.getElementById(elementId);
-        //   if (element) {
-        //     element.style.display = "none";
-        //   }
-        // }
-
-      
-        // function showElement(elementId) {
-        //   var element = document.getElementById(elementId);
-        //   // add event listener to hide the element when the user clicks anywhere on the screen
-        //   document.addEventListener("click", hideElement(element));
-        //   element.style.display="inline-block";
-        //   // prevent the click event from propagating to the document, which would trigger the hideElement function
-        //   document.addEventListener("click", function(event) {
-        //     event.defaultPrevented();
-        //   });
-        // }
-  
-        // function hideElement(element) {
-        //   // var element = document.getElementById(elementId);
-        //   element.style.display = "none";
-        //   // document.addEventListener("click", hide(element));
-        //   document.removeEventListener("click", hideElement(element));
-        // }
-        // function hide(element) {
-          
-
-          
-
-        // }          
-       
-      </script>
       <div class="setting">
         General
         <div class="expand">
           X
         </div>
-        <div class="show-more">
+        <div class="show-more" style="display: none;">
           <div>
             About
           </div>
