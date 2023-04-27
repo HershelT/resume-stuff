@@ -41,39 +41,38 @@
         </div>
       </div>
     </div>
-
+    <script>
+      function changeText(num) {
+        document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()
+        document.getElementById("setting-header").innerHTML = num;
+      }  
+    </script>
     <div class="side-setting">
-
+      
       <div class="setting">
         Display
-        <div class="expand" onclick="changeText('DISPLAY')">
+        <div class="expand" onclick="changeText('DISPLAY');">
           X
         </div>
         <div class="show-more">
-          <script>
-            function changeText(num) {
-              document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()
-              document.getElementById("setting-header").innerHTML = num;
-            }  
-          </script>
-          <div onclick="changeText('Video')"> 
+          <div onclick="changeText('Video');"> 
             Video
           </div>
-          <div onclick="changeText('Size')">
+          <div onclick="changeText('Size');">
             Size
           </div> 
         </div> 
       </div>
       <div class="setting">
         General
-        <div class="expand">
+        <div class="expand" onclick="changeText('GENERAL');">
           X
         </div>
         <div class="show-more">
-          <div>
+          <div onclick="changeText('About');">
             About
           </div>
-          <div>
+          <div onclick="changeText('Hershel Company');">
             Hershel Company
           </div>
         </div>
@@ -81,45 +80,45 @@
       
       <div class="setting">
         Profile
-        <div class="expand">
+        <div class="expand" onclick="changeText('PROFILE');">
           X
         </div>
-        <div class="show-more">
-          <div>
+        <div class="show-more" >
+          <div onclick="changeText('Security');">
             Security
           </div>
-          <div>
+          <div onclick="changeText('Password');">
             Password
           </div>
         </div>
       </div>
       <div class="setting">
         Resumes
-        <div class="expand">
+        <div class="expand" onclick="changeText('RESUMES');">
           X
         </div>
         <div class="show-more">
-          <div>
+          <div onclick="changeText('Bio');">
             Bio
           </div>
-          <div>
+          <div onclick="changeText('Image');">
             Image
           </div>
-          <div>
+          <div onclick="changeText('Skills');">
             Skills
           </div>
         </div>
       </div>
       <div class="setting">
         Privacy
-        <div class="expand">
+        <div class="expand" onclick="changeText('PRIVACY');">
           X
         </div>
         <div class="show-more">
-          <div>
+          <div onclick="changeText('Terms of Service');">
             Terms of Service
           </div>
-          <div>
+          <div onClick = "changeText('Public Account');">
             Public Account
           </div>
         </div>
