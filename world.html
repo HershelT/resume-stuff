@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles-skills/header.css">
     <link rel="stylesheet" href="styles-skills/general.css">
     <link rel="stylesheet" href="styles-global/global.css">
+    <script src="world.js"></script>
   </head>
   <body>
     
@@ -42,27 +43,33 @@
     </div>
 
     <div class="side-setting">
+
       <div class="setting">
         Display
-        <div class="expand">
+        <div class="expand" onclick="changeText('DISPLAY')">
           X
         </div>
         <div class="show-more">
-          <div>
+          <script>
+            function changeText(num) {
+              document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()
+              document.getElementById("setting-header").innerHTML = num;
+            }  
+          </script>
+          <div onclick="changeText('Video')"> 
             Video
           </div>
-          <div>
+          <div onclick="changeText('Size')">
             Size
-          </div>
-        </div>
-        
+          </div> 
+        </div> 
       </div>
       <div class="setting">
         General
         <div class="expand">
           X
         </div>
-        <div class="show-more" style="display: none;">
+        <div class="show-more">
           <div>
             About
           </div>
@@ -117,8 +124,22 @@
           </div>
         </div>
       </div>
+      
     </div>
-
-
+    <div class="general-rules">
+      <p id = "setting-header">
+        DISPLAY
+      </p>
+      <ul>
+        List 1
+      </ul>
+      <ul>
+        List 2
+      </ul>
+      <ul>
+        List 3
+      </ul>
+    </div>
   </body>
+
 </html>
